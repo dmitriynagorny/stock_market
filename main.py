@@ -52,7 +52,7 @@ def read_btc():
 
             # Буду чистить список через час после начала, в списке будут цены в интервале 60 минут
             if int(time.time() - time_start) >= 3600:
-                eth_list.pop(0)
+                btc_list.pop(0)
 
         except ValueError:
             logger.info('Error2')
